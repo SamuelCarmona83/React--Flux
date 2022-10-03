@@ -24,7 +24,9 @@ export const Home = () => {
   return (
     <div className="w-full h-full flex flex-col text-center">
       {/* <h1 className='text-3xl md:text-6xl font-bold my-4 md:my-8'>{store.name} </h1> */}
-      <img src={logo} style={{ padding: '3rem', paddingBottom: '0', maxWidth: '700px', margin: 'auto'}} alt="Rick and Morty"/>
+      <div className='pt-8 mb-0 mx-auto w-1/2'>
+        <img src={logo} className="object-contain" alt="Rick and Morty"/>
+      </div>
       <div className='flex flex-wrap '>
         {store.characters.map(char=> {return <Card key={char.id} character={char} />})}
         <div className='flex flex-row w-full'>

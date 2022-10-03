@@ -30,8 +30,8 @@ function App() {
   }, [vantaEffect]);
 
   return (
-    <div>
-      <div id="background-ring" className="fixed opacity-80 -z-40 w-full min-h-screen flex flex-col text-center"></div>
+    <div className='relative'>
+      <div id="background-ring" className="fixed top-0 opacity-80 -z-40 w-full min-h-screen flex flex-col text-center"></div>
       <Layout />
     </div>
   );
