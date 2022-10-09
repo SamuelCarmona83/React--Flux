@@ -1,11 +1,10 @@
 import './App.css';
 import  Layout  from './Layout';
-import React, { useEffect, useContext, useState, useRef } from 'react'
+import React, { useEffect, useState, } from 'react'
 
 function App() {
 
   const [vantaEffect, setVantaEffect] = useState(0);
-  const myRef = useRef(null);
 
   useEffect(() => {
     if (!vantaEffect) {

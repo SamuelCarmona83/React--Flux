@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "react";
 import Favorite from "./Favorite";
+import "./Card.css"
 
 export default function Card(props) {
 
@@ -14,12 +15,12 @@ export default function Card(props) {
         <img
           src={props.character.image}
           alt={props.character.name}
-          className="rounded-3xl mx-auto"
+          className="rounded-3xl mx-auto blur-in"
         />
         <h2 className="text-lg my-2 font-bold">{props.character.name}</h2>
         <p className="my-2">{props.character.gender}</p>
         <div className="flex flex-row justify-center">
-          <Link to={`/character/${props.character.id}`} className="btn-primary">
+          <Link to={`/character/${props.character.id}`} className="btn-primary link-btn">
             Details
           </Link>
           {/* <button
